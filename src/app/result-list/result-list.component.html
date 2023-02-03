@@ -1,0 +1,25 @@
+<div class="table is-striped">
+    <thead *ngIf="pages.length !== 0">
+        <tr>
+            <th>{{ title }}</th>
+            <th class="hide">{{ wordCount }}</th>
+            <th>{{ snippet }}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let item of pages" class="left">
+            <td>
+                <a [href]=" 'https://' + language + '.wikipedia.org/?curid=' + item.pageid " target="_blank">
+                    {{ item.title }}
+                </a>
+            </td>
+            <td class="hide"> {{ item.wordcount }}</td>
+            <td [innerHTML]="item.snippet"></td>
+
+        </tr>
+    </tbody>
+    
+</div>
+
+<h3 *ngIf="pages.length === 0" class="notFound">{{ emptyResult }}</h3>

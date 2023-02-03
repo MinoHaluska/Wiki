@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fullContent{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/abstract.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.searchContainer{
+    width: 90vw;
+    max-width: 1080px;
+    position: relative;
+    margin: 2rem auto;
+
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 2rem;
+    box-shadow: 0 0 14px 10px white;
+
+    overflow: hidden;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.searchContainer img{
+    width: 30%;
+    margin: 2rem auto;
+}
+
+.xxx{
+    background: white;
+    border: none;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px black;
+
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.btn{
+    background: #6392ff;
+    font-size: 1.2rem;
+
+    transition: letter-spacing 1s;
+}
+
+.btn:hover{
+    letter-spacing: 3px;
+}
+
+.hide{
+    display: none;
+}
+
+.result{
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.emptyInput{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .searchContainer img{
+        width: 40%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .searchContainer img{
+        width: 50%;
+    }
+}
+
+
+
