@@ -9,7 +9,7 @@
             <div>
                 <div>
                     
-                    <select class="xxx" (change)="languageChange($event.target.value)">
+                    <select class="inp" (change)="languageChange($event.target.value)">
                         <option value="sk">SK</option>
                         <option value="en">EN</option>
                         <option value="cs">CZ</option>
@@ -19,7 +19,7 @@
           
                 <div >
                     
-                    <select (change)="numberOfResultChange($event.target.value)" class="xxx">
+                    <select (change)="numberOfResultChange($event.target.value)" class="inp">
                         <option value="5">{{ selectLanguage.result }} 5</option>
                         <option value="10">{{ selectLanguage.result }} 10</option>
                         <option value="15">{{ selectLanguage.result }} 15</option>
@@ -29,11 +29,11 @@
                 </div>
           
                 <div>
-                    <input class="xxx" type="text" placeholder="{{selectLanguage.placeHolder}}" (input)="searchText=$event.target.value">
+                    <input class="inp" type="text" placeholder="{{selectLanguage.placeHolder}}" (input)="searchText=$event.target.value">
                 </div>
           
                 <div>
-                    <button type="submit" class="xxx btn">
+                    <button type="submit" class="inp btn">
                     {{ selectLanguage.search }}
                     </button>
                 </div>
